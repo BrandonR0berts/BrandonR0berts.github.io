@@ -2819,7 +2819,7 @@ input, select, textarea {
 	}
 
 		.main.style1 {
-			background: #000;
+			background: #F88259;
 		}
 
 		.main.style2 {
@@ -2920,7 +2920,7 @@ input, select, textarea {
 		background-image: url("../../images/BackgroundMountains.jpg"), url("../../images/BackgroundMountains.jpg"); /*, linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);*/
 		background-position: top left,						center center,					center center;
 		background-size: cover,							cover,							cover;
-		overflow: visible;
+		overflow: hidden;
 		position: relative;
 		text-align: center;
 	}
