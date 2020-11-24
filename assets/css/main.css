@@ -2824,7 +2824,7 @@ input, select, textarea {
 		}
 
 		.main.style2 {
-			background-color: rgba(255, 255, 255, 1.0f);
+			background-color: rgba(204, 234, 213, 0.5f);
 			/*color: rgba(252, 255, 228, 0.75);*/
 			background-attachment: fixed,							fixed;
 			/*background-image: url(""), url("");*/
