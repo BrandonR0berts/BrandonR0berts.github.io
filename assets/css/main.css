@@ -2818,14 +2818,14 @@ input, select, textarea {
 		padding: 6em 0 4em 0 ;
 	}
 
-		.main.style1 {
-			background-color: #F96;
-			
+		.main.style1 
+		{
+			background-color: rgba(199, 234, 227, 0.5);	
 		}
 
 		.main.style2 {
 			background-color: #333;
-			color: rgba(255, 255, 255, 0.75);
+			color: rgba(252, 255, 228, 0.75);
 			background-attachment: fixed,							fixed;
 			/*background-image: url(""), url("");*/
 			background-size: auto,							cover;
