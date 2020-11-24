@@ -2820,11 +2820,12 @@ input, select, textarea {
 
 		.main.style1 
 		{
-			background-color: rgba(199, 234, 227, 0.5);	
+			background-color: rgba(199, 234, 227, 1.0);	
 		}
 
 		.main.style2 {
-			background-color: rgba(204, 234, 213, 0.5f);
+			background-color: rgba(204, 234, 213, 1.0f);
+			color: rgba(204, 234, 213, 1.0f);
 			/*color: rgba(252, 255, 228, 0.75);*/
 			background-attachment: fixed,							fixed;
 			/*background-image: url(""), url("");*/
