@@ -1,4 +1,4 @@
-# This is the repo for my github hosted portfolio
+# Portfolio Repo Details:
 
 _On this portfolio website is:_
 - Demo videos of projects I have worked on
