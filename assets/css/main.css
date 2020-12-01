@@ -2815,17 +2815,16 @@ input, select, textarea {
 /* Main */
 
 	.main {
-		padding: 6em 0 4em 0 ;
+		padding: 30px 0 4em 0 ;
 	}
 
 		.main.style1 
 		{
-			background-color: rgb(160, 196, 232) !important; /*rgba(199, 234, 227, 1.0) !important;*/
+			background-color: rgb(160, 196, 232) !important;
 		}
 
 		.main.style2 
 		{
-			/*background-color: rgba(204, 234, 213, 1.0) !important;*/
 			background-color: rgb(160, 196, 232) !important;
 			background-attachment: fixed,							fixed;
 			/*background-image: url(""), url("");*/
