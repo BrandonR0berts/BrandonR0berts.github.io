@@ -2820,19 +2820,20 @@ input, select, textarea {
 
 		.main.style1 
 		{
-			background-color: rgba(199, 234, 227, 1.0) !important;
+			background-color: rgb(0, 19, 153) !important; /*rgba(199, 234, 227, 1.0) !important;*/
 		}
 
 		.main.style2 
 		{
-			background-color: rgba(204, 234, 213, 1.0) !important;
+			/*background-color: rgba(204, 234, 213, 1.0) !important;*/
+			background-color: rgb(0, 19, 153) !important;
 			background-attachment: fixed,							fixed;
 			/*background-image: url(""), url("");*/
 			background-size: auto,							cover;
 		}
 
 			.main.style2 a {
-				border-bottom-color: rgba(204, 234, 213, 1.0);
+				border-bottom-color: rgb(0, 19, 153); /*rgba(204, 234, 213, 1.0);*/
 			}
 
 				.main.style2 a:hover {
