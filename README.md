@@ -6,3 +6,5 @@ _On this portfolio website is:_
 - A more detailed rundown of some of the Uni Work I have completed
 - More details on the project I have developed whilst working at Curioso Games
 - Further explanation into some of the game jam projects I have created
+
+The actual link to the website is this: brandonmjroberts.github.io/
