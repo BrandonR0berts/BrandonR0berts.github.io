@@ -2820,35 +2820,35 @@ input, select, textarea {
 
 		.main.style1 
 		{
-			background-color: #6688af /*rgb(160, 196, 232) */ !important;
+			background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important;
 		}
 
 		.main.style2 
 		{
-			background-color: #6688af /*rgb(160, 196, 232) */ !important;
+			background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important;
 			background-attachment: fixed,							fixed;
 			/*background-image: url(""), url("");*/
 			background-size: auto,							cover;
 		}
 
 			.main.style2 a {
-				border-bottom-color: #6688af; /*rgb(160, 196, 232) */ /*rgba(204, 234, 213, 1.0);*/
+				border-bottom-color: rgb(102,136,175); /*rgb(160, 196, 232) */ /*rgba(204, 234, 213, 1.0);*/
 			}
 
 				.main.style2 a:hover {
-					color: #6688af /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
+					color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
 				}
 
 			.main.style2 h1, .main.style2 h2, .main.style2 h3, .main.style2 h4, .main.style2 h5, .main.style2 h6, .main.style2 strong, .main.style2 b {
-				background-color: #6688af /*rgb(160, 196, 232) */ !important; /* rgba(204, 234, 213, 1.0);*/
+				background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /* rgba(204, 234, 213, 1.0);*/
 			}
 
 			.main.style2 header p {
-				color: #6688af /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
+				color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
 			}
 
 			.main.style2 header.major:after {
-				background: #6688af /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
+				background: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
 			}
 
 			.main.style2 input[type="submit"],
@@ -2865,23 +2865,25 @@ input, select, textarea {
 				.main.style2 input[type="button"]:hover,
 				.main.style2 button:hover,
 				.main.style2 .button:hover {
-					background-color: #6688af /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/ /*rgba(255, 255, 255, 0.125);*/
+					background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/ /*rgba(255, 255, 255, 0.125);*/
 				}
 
 				.main.style2 input[type="submit"]:active,
 				.main.style2 input[type="reset"]:active,
 				.main.style2 input[type="button"]:active,
 				.main.style2 button:active,
-				.main.style2 .button:active {
-					background-color: #6688af /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0); *//* rgba(255, 255, 255, 0.25);*/
+				.main.style2 .button:active 
+				{
+					background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0); *//* rgba(255, 255, 255, 0.25);*/
 				}
 
 				.main.style2 input[type="submit"].primary,
 				.main.style2 input[type="reset"].primary,
 				.main.style2 input[type="button"].primary,
 				.main.style2 button.primary,
-				.main.style2 .button.primary {
-					background-color: #6688af /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
+				.main.style2 .button.primary 
+				{
+					background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0);*/
 					box-shadow: inset 0 0 0 1px #ffffff !important;
 					color: #333 !important;
 				}
@@ -2890,8 +2892,9 @@ input, select, textarea {
 					.main.style2 input[type="reset"].primary:hover,
 					.main.style2 input[type="button"].primary:hover,
 					.main.style2 button.primary:hover,
-					.main.style2 .button.primary:hover {
-						background-color: #6688af /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0); *//*rgba(255, 255, 255, 0.125)*/
+					.main.style2 .button.primary:hover 
+					{
+						background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /*rgba(204, 234, 213, 1.0); *//*rgba(255, 255, 255, 0.125)*/
 						color: #ffffff !important;
 					}
 
@@ -2899,8 +2902,9 @@ input, select, textarea {
 					.main.style2 input[type="reset"].primary:active,
 					.main.style2 input[type="button"].primary:active,
 					.main.style2 button.primary:active,
-					.main.style2 .button.primary:active {
-						background-color: #6688af /*rgb(160, 196, 232) */ !important; /* rgba(204, 234, 213, 1.0);*/ /*rgba(255, 255, 255, 0.25)*/
+					.main.style2 .button.primary:active 
+					{
+						background-color: rgb(102,136,175) /*rgb(160, 196, 232) */ !important; /* rgba(204, 234, 213, 1.0);*/ /*rgba(255, 255, 255, 0.25)*/
 					}
 
 			.main.style2 ul.major-icons li .icon {
@@ -2915,7 +2919,7 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #6688af; /* #4686a0;*/
+		background-color: rgb(102,136,175); /* #4686a0;*/
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: scroll,							scroll,							scroll;
 		background-image: url("../../images/BackgroundMountains.jpg"), url("../../images/BackgroundMountains.jpg"); /*, linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);*/
@@ -2978,7 +2982,7 @@ input, select, textarea {
 			#header .button.primary {
 				background-color: #ffffff;
 				box-shadow: inset 0 0 0 1px #ffffff !important;
-				color: #4686a0 !important;
+				color: rgb(102,136,175) /*#4686a0 */ !important;
 			}
 
 				#header input[type="submit"].primary:hover,
