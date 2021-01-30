@@ -27,11 +27,8 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Pacman</h1>
-									<p>Re-creation Of Pacman</p>
+									<p>Re-creation Of Pacman For My First Year Of University</p>
 								</header>
-								<a href="#work" class="jumplink pic">
-									<img src="images/me.jpg" alt="Pacman Chased By Ghosts" />
-								</a>
 							</article>
 
 						<!-- Work -->
@@ -97,9 +94,9 @@
 								</header1>
 								
 								<p>
-									This project was developed for my level 4 semester 1 submission graphics module submission. This submission required usage of a university specific framework, in order to create Pacman or a very similar game. </br>
-									As this was developed using an internal framework I therefore had never seen the starting code before, requiring me to work out of my comfort zone initially. </br>
-									Despite this though I was able to fully re-create the arcade version of Pacman, with the only exception of the between level animations, and the starting main screen.
+									This project was developed for my level 4 semester 1 submission in a graphics module. This submission required usage of a university owned framework in order to create Pacman, or a very similar game. </br>
+									As this was developed using an internal framework, I, therefore had never seen the starting code before, requiring me to work out of my comfort zone initially. </br>
+									Despite this though I was able to fully re-create the arcade version of Pacman, with the only exceptions of the between level animations, and the starting main screen.
 								</p>
 								
 								<header2 style="text-align:centre">
@@ -144,6 +141,18 @@
 								</header5>
 								
 								<p>
+                                                                    In the original Pacman the four ghosts all have similar, yet slightly different behaviours. This difference in behaviour is the position that they are trying to get to. With the notable exception of the orange ghost, who just travels randomly around the screen. <\br>
+                                                                    My re-creation I had the ghosts achieve this behaviour, as well as constantly adapting to the enviroment through use of a stack based finite state machine. This system is like a finite state machine, with the notable exception of having new states added onto a stack, instead of replacing the current state. This allows for new situations to arise, such as Pacman eating a power pill, and the previous state to be saved. </br>
+                                                                    This image describes the system well: </br>
+     
+                                                                    For the ghosts states there were: <\br>
+                                                                    Flee: </br>
+                                                                    Chase: </br>
+                                                                    Return home: </br>
+                                                                    Exit home: </br>
+
+                                                                    </br>One key point that applies to all AI in this project is the 'move to here' code. This code is notable as it is very possible for characters to become stuck in a corner, or to not change their axis when they should. Resulting in them never reaching their target position. </br>
+                                                                    In order to fix this issue the AI characters must never stop moving. Meaning that if they hit a wall then they must choose the next best direction for them to travel. This direction is calculated through determining which axis the character is further away from their target in. And then determining if they can go in that axis.
 								</p>
 								
 								<header6 style="text-align:centre">
