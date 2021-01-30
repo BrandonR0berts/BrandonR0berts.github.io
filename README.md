@@ -1,7 +1,9 @@
 # Portfolio Repo Details:
 
 _On this portfolio website is:_
-- A short bio about me
+- An introduction into how to use the website.
+- Embedded links to sub-website which detail individual projects in a lot more detail.
+- A short bio about me 
 - Demo videos of projects I have worked on, with relevent links below them
 - A more detailed rundown of some of the Uni Work I have completed
 - More details on the project I helped to develop whilst working at Curioso Games
