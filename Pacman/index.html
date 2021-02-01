@@ -128,9 +128,9 @@
 								</header4>
 								
 								<p>
-									Of all the concepts I created for this project, handelling collision and player movement was by far the hardest of them all. But even with all of the pitfalls along the way, the final result turned out exactly as I had intended it, if not how i planned it. </br> </br>
-									First of all I needed a way to set the collision for the level that aligned with the plan to making the levels almost fully customisable. So I couldn't hard code the colision, as it would defeat the point of doing the prior work.
-									My solution to this was to have a seperate folder named 'CollisionMaps', and to put text files in there stating where in the level has collision and where doesn't. This allows for specific collision maps to be made for specific levels. </br> </br>
+									Of all the concepts created for this project, handling collision and player movement was by far the most complex of them all. But even with all of the pitfalls along the way, the final result turned out exactly as intended, if not how it was initially planned. </br> </br>
+									First of all there needed to be a way to set the collision for the level, that aligned with the plan to making the levels almost fully customisable. So I couldn't hard code the collision, as it would defeat the point of doing the prior texture index mapping work.
+									My solution was to have a seperate folder named 'CollisionMaps', and to put collision data text files in there. This allows for specific collision maps to be made for specific levels, whilst still being fully customisable. </br> </br>
 									Loading this data and storing it into the program was not difficult, however, ensuring that the character moving around the level, be it a ghost or pacman, is always in the centre of the current row/column was a harder task than initially anticipated.
 									To solve this the player, whenever they change direction, is set to be in the centre of the axis perpendicular to the one they are going to be traveling along. And in order for them to change direction they must be within a certain distance of the centre of their grid square, to ensure that there is no obvious snapping to the new orientation. </br> </br>
 		
