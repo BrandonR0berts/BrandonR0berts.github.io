@@ -147,10 +147,14 @@
      
                                                                     For the ghosts states there are: </br>
                                                                     Flee: </br>
+									Whenever the player, if they are playing as Pacman, collects a powerup, then this state is pushed to the stack. In this state the ghost returns to a corner of the maze. This corner is different per ghosts colour, but the position they are heading towards is an impossible to reach position. The result of this is the ghosts circling around an area in a corner. </br>
+									In practice the ghosts normally don't spend long enough in their respective corners for this behaviour to be obvious. But it does give the impression of ghosts fleeing Pacman.
                                                                     Chase: </br>
+									This is the base state for the Ghosts, so that if nothing special is happening in the game, then their goal is always being followed. </br>
                                                                     Return home: </br>
+									This state just has the Ghost return to a set position in the maze. The position that is set to be their home is not accessable by Pacman, giving the visual impression of security for the ghosts. </br>
                                                                     Exit home: </br>
-
+									This state is only entered when the return home state has completed. Within this state the Ghost is directed towards their home's entrance. Upon reaching this position this state is instantly popped off the stack. </br>
                                                                     </br>One key point that applies to all AI in this project is the 'move to here' code. This code is notable as it is very possible for characters to become stuck in a corner, or to not change their axis when they should. Resulting in them never reaching their target position. </br>
                                                                     In order to fix this issue the AI characters must never stop moving. Meaning that if they hit a wall then they must choose the next best direction for them to travel. This direction is calculated through determining which axis the character is further away from their target in. And then determining if they can go in that axis.
 								</p>
