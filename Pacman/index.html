@@ -160,23 +160,21 @@
 								</header6>
 								
 								<p>
-								</p>
-								
-								<header7 style="text-align:centre">
-									<b><u>Top 10 Scores Leaderboard:</u></b>
-								</header7>
-								
-								<p>
-								</p>
-								
-								<header8 style="text-align:centre">
-									<b><u>Audio Implementation:</u></b>
-								</header8>
-								
-								<p>
+									Developing the AI for pacman was very similar to creating the ghost's AI. </br>
+									Firstly, they both used a stack based FSM. Therefore there were no new concepts required to be developed in order to get Pacman moving around the screen on his own. However, as the goals Pacman wanted to achieve were different to the Ghosts then he was required to use different states, to allow for different behaviour. This behaviour was: </br>
+									Collect Dots: </br>
+									This is the base state, so that if Pacman was in no danger then he would always continue to achieve the objective of the game (from his perspective). </br>
+									Flee Ghosts: </br>
+									If any ghosts came within a certain distance of Pacman then he would prioritise getting away from the Ghosts over collecting dots. If he is in this state and comes within a certain distance of a power up then he adds the state of collect power up to the stack. At the point that that Pacman is no-longer near any ghosts then this state is popped off the stack.</br>
+									Chase Ghosts: </br>
+									In this state Pacman will go towards the position of the closest ghost that is fleeing him, as chasing a ghost that could do him damage would make no sense. At the point that the power up runs out then this state is popped off the stack. </br>
+									Collect PowerUp: </br>
+									When in this state Pacman will go towards the closest power up, if there is one remaining. If there are no powerups remaining then this state is popped off the stack.</br> </br>
+
+									Secondly, they both were inherited from the same base class - which contains the collision and movement functionality. So making Pacman move to a certain point in the map was as simple as calling the same function the Ghosts were using. </br> </br>
 									
-								</p>
-								
+									And finally, getting the AI to control Pacman instead of a Ghost was as simple as making the player controls affect a ghost, and setting that this character should follow its FSM instead of player controls.
+								</p>							
 							</article>
 
 					</div>
