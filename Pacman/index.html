@@ -145,16 +145,16 @@
                                                                     My re-creation I had the ghosts achieve this behaviour, as well as constantly adapting to the enviroment through use of a stack based finite state machine. This system is like a finite state machine, with the notable exception of having new states added onto a stack, instead of replacing the current state. This allows for new situations to arise, such as Pacman eating a power pill, and the previous state to be saved. </br>
                                                                     This image describes the system well: </br>
      
-                                                                    For the ghosts states there are: </br>
-                                                                    Flee: </br>
+                                                                    For the ghosts states there are: </br> </br>
+                                                                    <b><u>Flee:</b></u> </br>
 									Whenever the player, if they are playing as Pacman, collects a powerup, then this state is pushed to the stack. In this state the ghost returns to a corner of the maze. This corner is different per ghosts colour, but the position they are heading towards is an impossible to reach position. The result of this is the ghosts circling around an area in a corner. </br>
-									In practice the ghosts normally don't spend long enough in their respective corners for this behaviour to be obvious. But it does give the impression of ghosts fleeing Pacman.
-                                                                    Chase: </br>
-									This is the base state for the Ghosts, so that if nothing special is happening in the game, then their goal is always being followed. </br>
-                                                                    Return home: </br>
-									This state just has the Ghost return to a set position in the maze. The position that is set to be their home is not accessable by Pacman, giving the visual impression of security for the ghosts. </br>
-                                                                    Exit home: </br>
-									This state is only entered when the return home state has completed. Within this state the Ghost is directed towards their home's entrance. Upon reaching this position this state is instantly popped off the stack. </br>
+									In practice the ghosts normally don't spend long enough in their respective corners for this behaviour to be obvious. But it does give the impression of ghosts fleeing Pacman. </br>
+                                                                    <b><u>Chase:</b></u> </br>
+									This is the base state for the Ghosts, so that if nothing special is happening in the game, then their goal is always being followed. </br> </br>
+                                                                    <b><u>Return home:</b></u> </br>
+									This state just has the Ghost return to a set position in the maze. The position that is set to be their home is not accessable by Pacman, giving the visual impression of security for the ghosts. </br> </br>
+                                                                    <b><u>Exit home: </b></u></br>
+									This state is only entered when the return home state has completed. Within this state the Ghost is directed towards their home's entrance. Upon reaching this position this state is instantly popped off the stack. </br> </br>
                                                                     </br>One key point that applies to all AI in this project is the 'move to here' code. This code is notable as it is very possible for characters to become stuck in a corner, or to not change their axis when they should. Resulting in them never reaching their target position. </br>
                                                                     In order to fix this issue the AI characters must never stop moving. Meaning that if they hit a wall then they must choose the next best direction for them to travel. This direction is calculated through determining which axis the character is further away from their target in. And then determining if they can go in that axis.
 								</p>
@@ -165,14 +165,14 @@
 								
 								<p>
 									Developing the AI for pacman was very similar to creating the ghost's AI. </br>
-									Firstly, they both used a stack based FSM. Therefore there were no new concepts required to be developed in order to get Pacman moving around the screen on his own. However, as the goals Pacman wanted to achieve were different to the Ghosts then he was required to use different states, to allow for different behaviour. This behaviour was: </br>
-									Collect Dots: </br>
-									This is the base state, so that if Pacman was in no danger then he would always continue to achieve the objective of the game (from his perspective). </br>
-									Flee Ghosts: </br>
-									If any ghosts came within a certain distance of Pacman then he would prioritise getting away from the Ghosts over collecting dots. If he is in this state and comes within a certain distance of a power up then he adds the state of collect power up to the stack. At the point that that Pacman is no-longer near any ghosts then this state is popped off the stack.</br>
-									Chase Ghosts: </br>
-									In this state Pacman will go towards the position of the closest ghost that is fleeing him, as chasing a ghost that could do him damage would make no sense. At the point that the power up runs out then this state is popped off the stack. </br>
-									Collect PowerUp: </br>
+									Firstly, they both used a stack based FSM. Therefore there were no new concepts required to be developed in order to get Pacman moving around the screen on his own. However, as the goals Pacman wanted to achieve were different to the Ghosts then he was required to use different states, to allow for different behaviour. This behaviour was: </br> </br>
+									<b><u>Collect Dots:</b></u> </br>
+									This is the base state, so that if Pacman was in no danger then he would always continue to achieve the objective of the game (from his perspective). </br> </br>
+									<b><u>Flee Ghosts: </b></u></br>
+									If any ghosts came within a certain distance of Pacman then he would prioritise getting away from the Ghosts over collecting dots. If he is in this state and comes within a certain distance of a power up then he adds the state of collect power up to the stack. At the point that that Pacman is no-longer near any ghosts then this state is popped off the stack.</br> </br>
+									<b><u>Chase Ghosts:</b></u> </br>
+									In this state Pacman will go towards the position of the closest ghost that is fleeing him, as chasing a ghost that could do him damage would make no sense. At the point that the power up runs out then this state is popped off the stack. </br> </br>
+									<b><u>Collect PowerUp:</b></u> </br>
 									When in this state Pacman will go towards the closest power up, if there is one remaining. If there are no powerups remaining then this state is popped off the stack.</br> </br>
 
 									Secondly, they both were inherited from the same base class - which contains the collision and movement functionality. So making Pacman move to a certain point in the map was as simple as calling the same function the Ghosts were using. </br> </br>
