@@ -132,7 +132,7 @@
 									To solve this the player, whenever they change direction, is set to be in the centre of the axis perpendicular to the one they are going to be traveling along. And in order for them to change direction they must be within a certain distance of the centre of their grid square, to ensure that there is no obvious snapping to the new orientation. </br> </br>
 		
 									With this in place there were still some minior bugs, such as if the player presses two valid directions at once, one axis was always priorisied over the other. And if the player is in a corner and is pressing two directions, one to leave the corner and one to remain. Then it was possible that the direction that prevents the player from moving would have been chosen, leaving the player stuck in a corner. </br> </br>
-									In order to remedy this I added a check whenever the player chooses a direction to go. This check determines if the chosen direction is valid, if not then it would ignore this input and fall into the next button press. This solves the second problem, but not the first. </br>
+									In order to remedy this I added a check whenever the player chooses a direction to go. This check determines if the chosen direction is valid, if not then it would ignore this input and fall into the next button press. This solves the second problem, but not the first. </br> </br>
 									To solve this I simply prioritised the current movement direction over a change in direction. So if the player is going right and is pressing right and left, the player will continue to move right. This is up until they release their movement direction, or until they hit a wall, which would cause their right movement to become invalid and they would start moving left.
 								</p>
 								
@@ -145,7 +145,7 @@
                                                                     My re-creation I had the ghosts achieve this behaviour, as well as constantly adapting to the enviroment through use of a stack based finite state machine. This system is like a finite state machine, with the notable exception of having new states added onto a stack, instead of replacing the current state. This allows for new situations to arise, such as Pacman eating a power pill, and the previous state to be saved. </br>
                                                                     This image describes the system well: </br>
      
-                                                                    For the ghosts states there are: </br> </br>
+                                                                    The ghosts states are: </br> </br>
                                                                     <b><u>Flee:</b></u> </br>
 									Whenever the player, if they are playing as Pacman, collects a powerup, then this state is pushed to the stack. In this state the ghost returns to a corner of the maze. This corner is different per ghosts colour, but the position they are heading towards is an impossible to reach position. The result of this is the ghosts circling around an area in a corner. </br>
 									In practice the ghosts normally don't spend long enough in their respective corners for this behaviour to be obvious. But it does give the impression of ghosts fleeing Pacman. </br> </br>
