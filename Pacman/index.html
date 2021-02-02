@@ -162,7 +162,7 @@
 									If any ghosts came within a certain distance of Pacman then he would prioritise getting away from the Ghosts over collecting dots. If he is in this state and comes within a certain distance of a power up then he adds the state of collect power up to the stack. At the point that that Pacman is no-longer near any ghosts then this state is popped off the stack.</br> </br>
 									<b><u>Chase Ghosts:</b></u> </br>
 									In this state Pacman will go towards the position of the closest ghost that is fleeing him, as chasing a ghost that could do him damage would make no sense. At the point that the power up runs out then this state is popped off the stack. </br> </br>
-									<b><u>Collect PowerUp:</b></u> </br>
+									<b><u>Collect Power Up:</b></u> </br>
 									When in this state Pacman will go towards the closest power up, if there is one remaining. If there are no powerups remaining then this state is popped off the stack.</br> </br>
 
 									Secondly, they both were inherited from the same base class - which contains the collision and movement functionality. So making Pacman move to a certain point in the map was as simple as calling the same function the Ghosts were using. </br> </br>
