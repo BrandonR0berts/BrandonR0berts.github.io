@@ -81,8 +81,8 @@
 								</header1>
 								
 								<p>
-									This project was developed as a level 4, semester 1, graphics module submission. This project required usage of a university specific framework in order to create Pacman, or a very similar game. </br>
-									As this was developed using an internal framework I, therefore, had never seen the framework code before, requiring me to initially work out of my comfort zone and adapt to the new system. Despite this though I was able to fully re-create the arcade version of Pacman, with the only exceptions of the between level animations, and the starting main menu screen.
+									This project was developed as a level 4, first semester, graphics module submission. This project required usage of a university specific framework to create Pacman, or a very similar game. </br>
+									As this was developed using an internal framework I, therefore, had never seen the framework code before, requiring me to initially work out of my comfort zone and adapt to the new system. Despite this though I was able to re-create the arcade version of Pacman, with the only exceptions of the between level animations, and the starting main menu screen.
 								</p>
 								
 								<header2 style="text-align:centre">
@@ -91,7 +91,7 @@
 								
 								<p>
 									One of my main aims whilst developing this project was to have all levels support being fully customised through just changing a text file, and maybe a sprite sheet. 
-									Therefore, during the initial development stages I focused on not hard coding as much of the game as I could. The result from this is that a text file, within a folder named 'BackgroundMaps', that maps the sprite indexes of the sprite sheet found in the directory 'Textures/Backgrounds', that is currently being used. </br>
+									Therefore, during the initial development stages I focused on not hard coding as much of the game as I could. The result from this is that a text file, within a folder named 'BackgroundMaps', that maps the sprite indexes of sprite sheets found in the directory 'Textures/Backgrounds', to the screen. </br>
 									This mapping of textures results in the following images mapping to each other, depending on which sprite sheet you use: </br>
 								</p>
 		
@@ -116,7 +116,7 @@
 								</header4>
 								
 								<p>
-									Of all the concepts created for this project, handling collision and player movement was by far the most complex of them all. But even with all of the pitfalls along the way, the final result turned out exactly as intended, if not how it was initially planned. </br> </br>
+									Of all the concepts created for this project, handling collision and player movement was by far the most complex of them all. And both of these concepts required enviroment collisions, making this area vital to the final game. During development there were many pitfalls along the way, however the final result ended up behaving exactly as intended, if not how I initally planned it. </br> </br>
 									First of all there needed to be a way to set the collision for the level, that also aligns with the plan to making the levels almost fully customisable. Due to this the collision couldn't be hardcoded, as it would defeat the point of doing the prior texture index mapping work.
 									My solution was to have a seperate folder named 'CollisionMaps', and to put collision data text files in there. This allows for specific collision maps to be made for specific levels, allowing them to be fully customisable. </br> </br>
 									Loading this data and storing it into the program was not difficult, however, ensuring that the character moving around the level, be it a ghost or pacman, is always in the centre of the current row/column was a harder task than initially anticipated.
