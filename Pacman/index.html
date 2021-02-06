@@ -132,13 +132,15 @@
 								</header5>
 								
 								<p>
-                                                                    In the original Pacman the four ghosts all have similar, yet slightly different behaviours. This difference in behaviour is the position that they are trying to get to. With the notable exception of the orange ghost, who just travels randomly around the screen. <\br>
-                                                                    My re-creation I had the ghosts achieve this behaviour, as well as constantly adapting to the enviroment through use of a stack based finite state machine. This system is like a finite state machine, with the notable exception of having new states added onto a stack, instead of replacing the current state. This allows for new situations to arise, such as Pacman eating a power pill, and the previous state to be saved. </br>
-                                                                    This image describes the system well: </br> </br>
+                                                                    In the original Pacman the four ghosts all have similar, yet slightly different behaviours. This difference in behaviour is the position that they are trying to get to. With the notable exception of the orange ghost, who just travels randomly around the screen. </br>
+                                                                    In this re-creation I had the ghosts achieve this behaviour, as well as constantly adapting to the enviroment, through use of a stack based finite state machine. This system is like a finite state machine, with the notable exception of having a stored stack of current states instead of just one. This allows for new situations to arise, such as Pacman eating a power pill, and the previous state to be saved. </br> </br> </br>
     
                                                                     <b><u>Flee:</b></u> </br>
 									Whenever the player, if they are playing as Pacman, collects a powerup, then this state is pushed to the stack. In this state the ghost returns to a corner of the maze. This corner is different per ghosts colour, but the position they are heading towards is an impossible to reach position. The result of this is the ghosts circling around an area in a corner. </br>
-									In practice the ghosts normally don't spend long enough in their respective corners for this behaviour to be obvious. But it does give the impression of ghosts fleeing Pacman. </br> </br>
+									In practice the ghosts normally don't spend long enough in their respective corners for this behaviour to be obvious. But it does give the impression of ghosts fleeing Pacman. </br> 
+									Here are the states the ghosts can be in:</br> </br>
+
+
                                                                     <b><u>Chase:</b></u> </br>
 									This is the base state for the Ghosts, so that if nothing special is happening in the game, then their goal is always being followed. </br> </br>
                                                                     <b><u>Return home:</b></u> </br>
