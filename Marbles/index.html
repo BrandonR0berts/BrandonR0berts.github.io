@@ -127,7 +127,7 @@
 								</p>
 				
 								<p>
-									The AI is given a random skill level that is within a boundary of the players'. This skill level is determined internally as a value between 0 and the skill level count, which will make the decision making manipulation easier to handle later on. 
+									The AI is given a random skill level that is within a boundary of the player's. This skill level is determined internally as a value between 0 and the skill level count, which will make the decision making manipulation easier to handle later on. 
 									This value is used to make the AI play at the player's skill level through using having a chance to perform a random move instead of the best calculated move. When the AI is making a decision as to a move a random number is chosen, if that number is greater than the current skill level, scaled up to a 1->100 scale, then a random move is chosen. This results in the higher level opponents making random moves less than in lower level matches.
 									If this random occurance doesn't happen then the best possible move is calculated, based off the current board, and is carried out. </br> </br>
 
@@ -139,12 +139,13 @@
 								
 								<h4> <u> SFX Implementing </u> </h4>
 								<p>
-									The audio and sfx within this project was done similar to how rituals implements the audio, with a central object controlling all of the audio files and triggering sounds. This allows for complete control over the volume of all audio within the game at once.
+									During the entirety of this project I worked closly with the audio developer in order to implement new SFX and music tracks that he was developing. Often implementing the audio, then allowing for this implementation to be listened back from the running game, giving an instant reflection to the musician as to how well the sounds work in game. </br>
+									Within this project the audio and sfx was done similar to how Rituals would go onto implement audio, with a central object controlling all of the audio files and triggering sounds. This allows for complete control over the volume of all audio within the game at once, and for a quick swapping in/out of sound files when new versions were sent across.
 								</p>
 								
 								<h4> <u> Score Counter And Ranking Changes </u> </h4>
 								<p>
-									
+									When a game is completed, be it VS mode or solo. Then the amount of points scored in the game are added to the player's exp. This is shown in the end game counter that shows. This counter checks after every addition to see if the current exp value exceeds a preset value set in code. If so then it triggers the level up animations and changes the player's rank icon.
 								</p>
 								
 								<h4> <u> Quality Assurance </u> </h4>
