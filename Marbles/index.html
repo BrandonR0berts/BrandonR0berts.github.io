@@ -123,12 +123,13 @@
 								<p>
 									There needed to be an AI opponent developed for the Vs mode, so I was tasked with developing a realistic 'human' opponent player. </br>
 						                        To go about this task I had a few initial questions to decide on. These being, how does the AI scale with the player's skill level, how should the AI decide what move it should do and how should the AI react to the constantly changing enviroment </br> 
-									Solving these questions took a fair bit of experimentation and reworking </br>
-									The final AI goes through a these steps: </br>
-		
-									Initialisation. This is where the AI is given a random skill level ranking that is around the player's. This skill level is determined internally as a value between 0 and the skill level count. 
-									Making the opponent play at the player's skill level is done through using this value. </br>
-									When the AI is making a decision as to a move a random number is chosen, if that number is greater than the current skill level scaled up to a 1->100 scale then a random move is chosen instead of calculating the best possible move.
+									Solving these questions took a fair bit of experimentation and reworking. This is how the final AI works: </br>
+								</p>
+
+				
+								<p>
+									This is where the AI is given a random skill level ranking that is around the player's. This skill level is determined internally as a value between 0 and the skill level count. 
+									Making the opponent play at the player's skill level is done through using this value through adding an element of randomness to their decisions. When the AI is making a decision as to a move a random number is chosen, if that number is greater than the current skill level scaled up to a 1->100 scale then a random move is chosen instead of calculating the best possible move.
 									If this random occurance doesnt happen then the best possible move is calculated, based off the current board, and is carried out.
 								</p>
 								
