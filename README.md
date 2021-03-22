@@ -9,6 +9,7 @@ _This portfolio website contains:_
 - More details on the projects I helped to develop whilst working at Curioso Games.
 - Further explanation into some of the game jam projects I have created.
 - Links to all relevent areas of my work, including my LinkedIn, Twitter and Github Profile.
+- All sub websites have readme files that have a project summary.
 
 The link to the website is this: brandonmjroberts.github.io/
 
