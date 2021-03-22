@@ -125,11 +125,11 @@
 		
 									With this in place there were still some minior bugs, such as if the player presses two valid opposing directions at once, then they would thrash beteen the two directions. And, if the player is in a corner and pressing two directions, one to leave the corner and one to remain. Then it was possible that the direction that prevents the player from moving would have been chosen, leaving the player stuck in a corner. </br>
 									In order to remedy this a check was added so that whenever the player chooses a direction to go the new direction is first determined if it is a valid move. If the move is not valid then the input is ignored. This solves the problem of being stuck in a corner, but not the problem of thrashing between two valid movements. </br> </br>
-									To solve this I simply prioritised the current movement direction over a change in direction. So if the player is going right and is pressing right and left, the player will continue to move right. This is up until they release their movement direction, or until they hit a wall, which would cause their right movement to become invalid and they would start moving left.
+									To solve the thrashing problem I simply prioritised the current movement direction over a change in direction. So if the player is going right and is pressing right and left, the player will continue to move right. This is up until they release their movement direction, or until they hit a wall, which would cause their right movement to become invalid and they would start moving left.
 								</p>
 								
 								<header5 style="text-align:centre">
-									<b><u>    AI Ghosts:</u></b>
+									<b><u>&emsp AI Ghosts:</u></b>
 								</header5>
 								
 								<p>
@@ -153,7 +153,7 @@
 								</p>
 								
 								<header6 style="text-align:centre">
-									<b><u>    AI Pacman:</u></b>
+									<b><u>AI Pacman:</u></b>
 								</header6>
 								
 								<p>
