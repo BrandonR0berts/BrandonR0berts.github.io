@@ -131,17 +131,18 @@
 									</br>Each area in the level contains a background tile map, this provides only visuals and no collision, along with a sprite sheet this background layer should reference from.</br>
 									</br>They then have an interaction layer file. </br>
 									This file is similarly layed out to the background layer, with it providing indexes to render from its own sprite sheet. But the difference is that this layer acts as collision to the player. Making it useful for defining ground and non-movable objects.</br>
-									Next came the object layer. This layer is just a file containing a name of an object - for example a 'GOOMBA' - and then a list of data that this object has about it. This data normally consists of a spawnpoint, facing direction, collision box size and so on.</br>
-									What is special about this layer is that the objects defined here need to interact with other objects and the interaction layer.</br>
+									</br>Next came the object layer. 
+									</br>This layer is just a file containing a name of an object - for example a 'GOOMBA' - and then a list of data that this object has about it. This data normally consists of a spawnpoint, facing direction, collision box size and so on.</br>
+									</br>What is special about this layer is that the objects defined here need to interact with other objects and the interaction layer.</br>
 									
-									How I had in mind for this to work was as such: </br> 
+									</br> <b>How I had in mind for this to work was as such:</b> </br> 
 									Background layer - Just for visuals </br>
 									Interaction layer - player interacts with it </br>
 									Object layer - player interacts and gets an interaction back </br>
 									
 									</br>
 									After all of this has been loaded in and stored in code it is then rendered in this order: Background Layer, Interaction Layer, Object Layer. </br>
-									What this also allowed me to do was to have non-rendered objects in the level, without them being locked into a tile map or collision map. For example the walkways across some blocks in level 1-1 </br>
+									What this also allowed me to do was to have non-rendered objects in the level, without them being locked into a tile map or collision map. For example the walkways across some blocks in level 1-1. </br>
 								</p>
 
                                                                 <header2>
@@ -158,14 +159,15 @@
                                                                 </header2>
 
 								<p>
-									The world map is made from a system completly different to the levels. How they work is they have a background layer (slightly different to the levels), and a node map layer. </br>
-									How the background layer differs from the levels is that it allows for certain sprites to be animating straight from the sprite sheet. Whereas the level system just allows for static sprites. </br>
-									How this is done is through defining how many sprites you want the sprite to animate through, along with the sprite sheet index map the animation starts from. And then the time per frame for this animation.</br>
-									What this data allows you to do is to load in the background sprite sheet as normal, but keep a seperate special list of animating sprites. Then in the update loop keep track of each one of their animation cycles, updating what ID on the sprite sheet should be rendered as time progresses. </br>
-									A benifit of this approach is that it is static by design. So all sprites of a certain type will animate on the world map with only one line stating that they should. </br>
+									The world map is made from a system completly different to the levels. </br>
+									How they work is they have a background layer (slightly different to the levels), and a node map layer. </br>
+									</br>How the background layer differs from the levels is that it allows for certain sprites to be animating straight from the sprite sheet. Whereas the level system just allows for static sprites. </br>
+									</br>This is done is through defining how many sprites you want the sprite to animate through, along with the sprite sheet index map the animation starts from. And then the time per frame for this animation.</br>
+									</br>What this data allows you to do is to load in the background sprite sheet as normal, but keep a seperate special list of animating sprites. Then in the update loop keep track of each one of their animation cycles, updating what ID on the sprite sheet should be rendered as time progresses. </br>
+									</br>A benifit of this approach is that it is static by design. So all sprites of a certain type will animate on the world map with only one line stating that they should. </br>
 
 									</br> The node map layer consists of a list of ID's, followed by their file paths. This is used as a reference when you press to enter a level. As the ID of the square you are currently stood on is looked up in the table of filepaths, and then this is passed into the level loading code to extract the level areas from it. </br>
-									It then states the map in a simlar patten to that of the background layer. This is used both as a lookup table, and a collision map. So that where the player can go in the world map is dependent upon what levels they can go into. </br>
+									</br>It then states the map in a simlar patten to that of the background layer. This is used both as a lookup table, and a collision map. So that where the player can go in the world map is dependent upon what levels they can go into. </br>
 								</p>
 								
 								
@@ -175,15 +177,15 @@
 
 								<p>
 									The observer pattern is a code design pattern that allows for two portions of code to 'know' about each other, without them being dependent upon each other. So if one system crashes the other one is not taken down with it </br>
-									I first read about this pattern in the book 'Game Programming Patterns' by Robert Nystrom. </br>
+									</br>I first read about this pattern in the book 'Game Programming Patterns' by Robert Nystrom. </br>
 									How this works is that one class inhertits from an abstract class called 'Observer'. And the other class inherits from an abstract class called 'Subject'. </br>
-									The subject has a list of Observers that it 'Notifies' whenever something of note happens. The observer that gets notified then handles this information how they wish. </br>
-									The great bit of this design though is that the subject may have no observers, or it may have a thousand. Either way the information gets sent out, and subject no longer has to be concerned with it. </br>
+									</br>The subject has a list of Observers that it 'Notifies' whenever something of note happens. The observer that gets notified then handles this information how they wish. </br>
+									</br>The great bit of this design though is that the subject may have no observers, or it may have a thousand. Either way the information gets sent out, and subject no longer has to be concerned with it. </br>
 									
 									</br>
 									I have used this patten for the audio system implementaion of Mario Bros 3. The audio system observes a lot of places, all of which can send a notification out at any point that something has happened that should trigger a sound effect to play. </br>
-									It is benifitial to do this like this because it allows for other systems to observe the same place and react to the same notification call. Allowing for multiple events to be triggered from one call. </br>
-									An example of this is if the player hits an enemy, which then kills the player. This sends a notification to the audio system to play the death SFX. And to the HUD to update the life counter. </br>
+									</br>It is benifitial to do this like this because it allows for other systems to observe the same place and react to the same notification call. Allowing for multiple events to be triggered from one call. </br>
+									</br>An example of this in the code is if the player hits an enemy, which then kills the player, and sends a notification to the audio system to play the death SFX. And to the HUD to update the life counter. </br>
 								</p>
 
 
