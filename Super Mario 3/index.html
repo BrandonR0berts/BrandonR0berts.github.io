@@ -122,14 +122,15 @@
 								</header>
 								
                                                                 <header2>
-                                                                        Render Layers:
+                                                                        <b>Render Layers:</b> </br>
                                                                 </header2>
 
 								<p>
 									For the SMB3 part of the project I designed and implemented a fairly complex system for loading in, handling collisions and rendering the layers of each level.  </br>
-									How the system works is that each level consists of different areas. Most only contain two - the overworld and a sub area (pipe area). </br>
-									Each area in the level contains a background tile map, this provides only visuals and no collision, along with a sprite sheet this background layer should reference from.</br>
-									They then have an interaction layer file. This file is similarly layed out to the background layer, with it providing indexes to render from its own sprite sheet. But the difference is that this layer acts as collision to the player. Making it useful for defining ground and non-movable objects.</br>
+									</br>How the system works is that each level consists of different areas. Most only contain two - the overworld and a sub area (pipe area). </br>
+									</br>Each area in the level contains a background tile map, this provides only visuals and no collision, along with a sprite sheet this background layer should reference from.</br>
+									</br>They then have an interaction layer file. </br>
+									This file is similarly layed out to the background layer, with it providing indexes to render from its own sprite sheet. But the difference is that this layer acts as collision to the player. Making it useful for defining ground and non-movable objects.</br>
 									Next came the object layer. This layer is just a file containing a name of an object - for example a 'GOOMBA' - and then a list of data that this object has about it. This data normally consists of a spawnpoint, facing direction, collision box size and so on.</br>
 									What is special about this layer is that the objects defined here need to interact with other objects and the interaction layer.</br>
 									
@@ -144,7 +145,7 @@
 								</p>
 
                                                                 <header2>
-                                                                        Animations:
+                                                                        <b>Animations:</b>
                                                                 </header2>
 
 								<p>
@@ -153,7 +154,7 @@
 								
 								
                                                                 <header2>
-                                                                        World Map:
+                                                                        <b>World Map: </b>
                                                                 </header2>
 
 								<p>
@@ -169,7 +170,7 @@
 								
 								
                                                                 <header2>
-                                                                        Observer Pattern Implementaion:
+                                                                        <b>Observer Pattern Implementaion:</b>
                                                                 </header2>
 
 								<p>
