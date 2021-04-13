@@ -162,16 +162,16 @@
 										</div>
 									</div>
 								<p>
-									</br>What is special about this layer is that the objects defined here need to interact with other objects and the interaction layer.</br>
+									</br>What is special about this layer is that the objects defined here need to interact with other objects and the interaction layer. This makes handling the loading in of them more challenging than the other two layers. This is because the other two layers can just be stored as a two dimensional array of values, whereas the object layer needs to constantly be changing. So it must be a list or vector of objects.</br>
 									
 									</br> <b>How I had in mind for this to work was as such:</b> </br> 
 									Background layer - Just for visuals </br>
-									Interaction layer - player interacts with it </br>
-									Object layer - player interacts and gets an interaction back </br>
+									Interaction layer - Player interacts with it </br>
+									Object layer - Player interacts and gets an interaction back </br>
 									
 									</br>
 									After all of this has been loaded in and stored in code it is then rendered in this order: Background Layer, Interaction Layer, Object Layer. </br>
-									What this also allowed me to do was to have non-rendered objects in the level, without them being locked into a tile map or collision map. For example the walkways across some blocks in level 1-1. </br>
+									What having the object layer allows me to do is to have non-rendered objects in the level, without them being locked into a tile map or collision map. This is useful for example with the walkways across some blocks in level 1-1, or the invisible blocks. </br>
 								</p>
 
                                                                 <header2>
