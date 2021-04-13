@@ -129,6 +129,14 @@
 									For the SMB3 part of the project I designed and implemented a fairly complex system for loading in, handling collisions and rendering the layers of each level. These layers consist of the background, interaction and object layers.</br>
 									</br>How the system works is that each level consists of different areas. Most only contain two - the overworld and a sub area (pipe area). However the system does support any number of sub areas, so long as they are formatted correctly in the file system, and referenced with the correct file path upon loading.</br>
 									</br>Each area in the level contains a background tile map, this provides only visuals and no collision, along with a sprite sheet this background layer should reference from.</br>
+								</p>
+
+									<div class="row">
+										<div class="col-4 col-4-medium col-12-small">
+											<a class="image fit"><img src="SMB Images/Background Layer Example.jpg"></a>
+										</div>
+									</div>
+								<p>
 									</br>They then have an interaction layer file. Which is a file that is similarly layed out to the background layer, with it providing indexes to render from its own sprite sheet. But the difference is that this layer acts as collision to the player. Making it useful for defining ground and non-movable objects.</br>
 									</br>Next came the object layer. 
 									</br>This layer is just a file containing a name of an object - for example a 'GOOMBA' - and then a list of data that this object has about it. This data normally consists of a spawnpoint, facing direction, collision box size and so on.</br>
