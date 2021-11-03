@@ -13,4 +13,4 @@ _This portfolio website contains:_
 The link to the website is this: brandonmjroberts.github.io/
 
 All sub directory websites are in the format: brandonmjroberts.github.io/sub-website-name 
-Eg:  brandonmjroberts.github.io/Game-Jams
+Eg:  brandonmjroberts.github.io/Game-Jams being the repository location and: https://brandonmjroberts.github.io/Game%20Jams/index.html being the sub-website link
