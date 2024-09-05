@@ -10,7 +10,7 @@ _This portfolio website contains:_
 - A sub-website that lists and delves into some of the game jam projects I have created.
 - Links to all relevent areas of my work, including my LinkedIn, Twitter and Github Profile.
 
-The link to the website is this: brandonmjroberts.github.io/
+The link to the website is this: https://brandonr0berts.github.io/
 
 All sub directory websites are in the format: brandonmjroberts.github.io/sub-website-name 
 
